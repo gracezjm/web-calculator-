@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css"/>
+  <title>Calculator</title>
+  <title>Javascript Practice</title>
+</head>
+<body>
+    <div class="flex-container">  
+        <h1>Calculator</h1>
+        <img src="src/IMG_calculator.jpg" alt="Calculator" width="250" height="150" > 
+    </div>
+    <div class="flex-container">
+    <form>
+        
+        <input id="firstNumber" type="text" name="firsNumber" onclick="clearFirst()"/><!--clear this input when user clicks -->
+        <select id="operator" onchange="displayResult()"> <!--start new calculation when user change the operator -->
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <input id="secondNumber" type="text" name="secondNumber" onclick="clearSecond()"/> <!--clear this input when user clicks -->
+        &nbsp&nbsp<span style="font-size:48px">=</span>&nbsp&nbsp
+        
+        <label id="result">Result</label>
+        <br><br><br>
+
+        <button onclick="displayResult()" type="button" >Calculate</button> <!--start calculation when user click Calculate button -->
+        <button type="button" onclick="clearForm()" > Reset </button> <!--clear all display  when user click reset -->
+    </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
